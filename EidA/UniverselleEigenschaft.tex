@@ -1,0 +1,16 @@
+\newcommand{\UniverselleEigenschaft}[9]{
+    \begin{tikzpicture}
+
+        \node[] at (0, 0)   (a) {#1};
+        \node[] at (3, 0)   (b) {#2};
+        \node[] at (4, 2)   (c) {#3};
+        \node[] at (4, -2)  (d) {#4};
+
+        \draw[->] (a) -- (b) node[midway, sloped, above] {#5};
+        \draw[->] (a) -- (c) node[midway, sloped, above] {#6};
+        \draw[->] (a) -- (d) node[midway, sloped, above] {#7};
+        \draw[->] (b) -- (c) node[midway, sloped, above] {#8};
+        \draw[->] (b) -- (d) node[midway, sloped, above] {#9};
+
+    \end{tikzpicture}
+}
